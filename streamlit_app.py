@@ -211,7 +211,7 @@ ranks_df = pd.read_pickle('rank_dataframe.pkl')
 win_per_dataframe = pd.read_pickle('win_per_dataframe.pkl')
 
 # import excel containing the schedule
-schedule=pd.read_excel("C:/CHANDRAJITH/Info/PROJECT/DATA/ODI 2023 Schedule.xlsx")
+schedule=pd.read_excel("ODI 2023 Schedule.xlsx")
 schedule[['Team 1', 'Team 2']] = schedule['Matches'].str.split('vs', expand=True)
 schedule['Team 1']=schedule['Team 1'].str.strip().str.title()
 schedule['Team 2']=schedule['Team 2'].str.strip().str.title()
