@@ -6,23 +6,29 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 # Load Models and there Label Encoders
-model1 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/model1.pkl')
-le1 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/le_1.pkl')
+with open('model1.pkl', 'rb') as file:
+    model1 = pickle.load(file)
+with open('le_1.pkl', 'rb') as file:
+    le1 = pickle.load(file)
 
-model2 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/model2.pkl')
-le2 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/le_2.pkl')
+with open('model2.pkl', 'rb') as file:
+    model2 = pickle.load(file)
+with open('le_2.pkl', 'rb') as file:
+    le2 = pickle.load(file)
 
-model3 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/model3.pkl')
-le3 = joblib.load('C:/CHANDRAJITH/Info/PROJECT/models/le_3.pkl')
+with open('model3.pkl', 'rb') as file:
+    model3 = pickle.load(file)
+with open('le_3.pkl', 'rb') as file:
+    le3 = pickle.load(file)
 
 # Loading saved dictionaries
-with open('C:/CHANDRAJITH/Info/PROJECT/models/dicts.pkl', 'rb') as f:
+with open('dicts.pkl', 'rb') as f:
     dict1 = pickle.load(f)
     dict2 = pickle.load(f)
     dict3 = pickle.load(f)
 
 # Loading support dictionaries
-with open('C:/CHANDRAJITH/Info/PROJECT/models/support_dicts.pkl', 'rb') as f:
+with open('support_dicts.pkl', 'rb') as f:
     team_summary_df_dict = pickle.load(f)
     ranking_df_dict = pickle.load(f)
     pitch_details_dict = pickle.load(f)
@@ -199,10 +205,10 @@ def weighted_prediction(team1, team2,Day,Month,Year,Ground,Country):
     return max_weight_pred
 
 # import the ranks dataframe for display purpose
-ranks_df = pd.read_pickle('C:/CHANDRAJITH/Info/PROJECT/models/rank_dataframe.pkl')
+ranks_df = pd.read_pickle('rank_dataframe.pkl')
 
 # import the win% dataframe for display purpose
-win_per_dataframe = pd.read_pickle('C:/CHANDRAJITH/Info/PROJECT/models/win_per_dataframe.pkl')
+win_per_dataframe = pd.read_pickle('win_per_dataframe.pkl')
 
 # import excel containing the schedule
 schedule=pd.read_excel("C:/CHANDRAJITH/Info/PROJECT/DATA/ODI 2023 Schedule.xlsx")
