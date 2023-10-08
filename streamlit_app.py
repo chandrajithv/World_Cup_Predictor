@@ -9,19 +9,19 @@ print(sys.executable)
 
 
 # Load Models and there Label Encoders
-with open('best_xgb_m1.pkl', 'rb') as file:
+with open('model1_n.pkl', 'rb') as file:
     model1 = pickle.load(file)
-with open('label_encoder_1.pkl', 'rb') as file:
+with open('le1_n.pkl', 'rb') as file:
     le1 = pickle.load(file)
 
-with open('best_ground_info_final_xgb.pkl', 'rb') as file:
+with open('model2_n.pkl', 'rb') as file:
     model2 = pickle.load(file)
-with open('label_encoder_2.pkl', 'rb') as file:
+with open('le2_n.pkl', 'rb') as file:
     le2 = pickle.load(file)
 
-with open('best_world_cup_grounds_data_final_xgb.pkl', 'rb') as file:
+with open('model3_n.pkl', 'rb') as file:
     model3 = pickle.load(file)
-with open('label_encoder_3.pkl', 'rb') as file:
+with open('le3_n.pkl', 'rb') as file:
     le3 = pickle.load(file)
 
 # Loading saved dictionaries
