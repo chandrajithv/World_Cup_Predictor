@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
+import xgboost
 
 # Load Models and there Label Encoders
 with open('model1.pkl', 'rb') as file:
