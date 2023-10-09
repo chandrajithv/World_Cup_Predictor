@@ -6,6 +6,13 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import sys
 print(sys.executable)
+from PIL import Image
+
+# Load the image
+image = Image.open('symbol.png')
+
+# Display the image
+st.image(image, use_column_width=True)
 
 
 # Load Models and there Label Encoders
