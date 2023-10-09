@@ -21,9 +21,9 @@ All three models were built using the hyperparameter-tuned XGBClassifier algorit
 
 ## Repository Contents
 
-- **`model1_n.pkl`, `model2_n.pkl`, `model3_n.pkl`:** These are the saved machine learning models used by the application, each corresponding to one of the three models.
+- **`models_n.pkl`:** This file contains all three saved machine learning models used by the application.
 
-- **`le1_n.pkl`, `le2_n.pkl`, `le3_n.pkl`:** These files contain the label encoders used for the models.
+- **`encoders_n.pkl`:** This file contains the label encoders used for the models.
 
 - **`dicts.pkl`:** This file contains dictionaries required for model inputs.
 
