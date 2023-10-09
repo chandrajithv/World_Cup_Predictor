@@ -249,10 +249,10 @@ def main():
     - **Win Percentage Data (2020 to 2023):** Win percentage data for various teams in the years 2020 to 2023 was added to the datasets. This information provides insights into each team's performance leading up to the predictions.
     - **ODI Rankings (2018 to 2023):** ODI rankings for various teams spanning from 2018 to 2023 were integrated into the data. These rankings offer an additional dimension of team strength and standing.
 
-    The final prediction is a combination of predictions by these three models, with the following weightage:
-    Model 1: 40%
-    Model 2: 30%
-    Model 3: 30%
+    The final prediction is a combination of predictions by these three models, with the following weightage: 
+    Model 1: 40%, 
+    Model 2: 30%, 
+    Model 3: 30% 
     This multi-model approach and the inclusion of diverse datasets aim to provide comprehensive and accurate predictions for upcoming ODI matches, considering various factors that may influence match outcomes.
 
     **Disclaimer: Toss Details Not Considered**
