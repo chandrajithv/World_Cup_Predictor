@@ -252,7 +252,7 @@ def main():
     The final prediction is a combination of predictions by these three models, with the following weightage: 
     Model 1: 40%, 
     Model 2: 30%, 
-    Model 3: 30% 
+    Model 3: 30%. 
     This multi-model approach and the inclusion of diverse datasets aim to provide comprehensive and accurate predictions for upcoming ODI matches, considering various factors that may influence match outcomes.
 
     **Disclaimer: Toss Details Not Considered**
@@ -261,10 +261,8 @@ def main():
     
     # Add to sidebar
     st.sidebar.markdown(model_details)
-
-    ##################
-
-        
+    
+    #########       
     # Create input widgets for user input
     team1 = st.selectbox('Choose Team 1 Name:', all_teams)
     #st.write(f'You selected: {team1}')
