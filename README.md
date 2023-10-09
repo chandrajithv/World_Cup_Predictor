@@ -1,6 +1,6 @@
 # Cricket ODI World Cup Predictor
 
-![Cricket](https://your-image-url-here.jpg)
+![Cricket](https://github.com/chandrajithv/World_Cup_Predictor/blob/1a6520b60d7b7b6310cf053d54b96e46c5127c16/Predictor_Web_App_photo.jpg)
 
 This is a Cricket World Cup predictor web application developed using Streamlit. The application combines predictions from three machine learning models to forecast the winner of upcoming matches.
 
