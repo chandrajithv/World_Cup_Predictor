@@ -17,6 +17,8 @@ The final prediction is a weighted combination of these models:
 - Model 2: 30%
 - Model 3: 30%
 
+  All three models were built using the hyperparameter-tuned XGBClassifier algorithm from scikit-learn.
+
 ## Repository Contents
 
 - `models/`: Contains saved machine learning models and label encoders used by the application.
@@ -32,7 +34,7 @@ To use the predictor:
 2. Install the required Python packages using `pip install -r requirements.txt`.
 3. Run the Streamlit app with `streamlit run app.py`.
 
-Please note that toss details are not considered, which may lead to slight bias when both teams have similar winning probabilities.
+Please note that toss details are not considered, which may lead to slight bias when both teams have similar winning probabilities. Additionally, predictions are based on data available up to September 17, 2023.
 
 ## Contribution
 
