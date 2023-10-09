@@ -17,7 +17,7 @@ The final prediction is a weighted combination of these models:
 - Model 2: 30%
 - Model 3: 30%
 
-  All three models were built using the hyperparameter-tuned XGBClassifier algorithm from scikit-learn.
+All three models were built using the hyperparameter-tuned XGBClassifier algorithm from scikit-learn.
 
 ## Repository Contents
 
