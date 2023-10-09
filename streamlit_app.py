@@ -9,20 +9,15 @@ print(sys.executable)
 
 
 # Load Models and there Label Encoders
-with open('model1_n.pkl', 'rb') as file:
-    model1 = pickle.load(file)
-with open('le1_n.pkl', 'rb') as file:
-    le1 = pickle.load(file)
+with open('models_n.pkl', 'rb') as f:
+    model1 = pickle.load(f)
+    model2 = pickle.load(f)
+    model3 = pickle.load(f)
 
-with open('model2_n.pkl', 'rb') as file:
-    model2 = pickle.load(file)
-with open('le2_n.pkl', 'rb') as file:
-    le2 = pickle.load(file)
-
-with open('model3_n.pkl', 'rb') as file:
-    model3 = pickle.load(file)
-with open('le3_n.pkl', 'rb') as file:
-    le3 = pickle.load(file)
+with open('encoders_n.pkl', 'rb') as f:
+    le1 = pickle.load(f)
+    le2 = pickle.load(f)
+    le3 = pickle.load(f)
 
 # Loading saved dictionaries
 with open('dicts.pkl', 'rb') as f:
