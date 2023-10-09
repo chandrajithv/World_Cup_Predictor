@@ -21,10 +21,23 @@ All three models were built using the hyperparameter-tuned XGBClassifier algorit
 
 ## Repository Contents
 
-- `models/`: Contains saved machine learning models and label encoders used by the application.
-- `data/`: Includes additional datasets and dictionaries used for model inputs.
-- `app.py`: The Streamlit web application code.
-- `requirements.txt`: Lists the necessary Python packages to run the application.
+- **`model1_n.pkl`, `model2_n.pkl`, `model3_n.pkl`:** These are the saved machine learning models used by the application, each corresponding to one of the three models.
+
+- **`le1_n.pkl`, `le2_n.pkl`, `le3_n.pkl`:** These files contain the label encoders used for the models.
+
+- **`dicts.pkl`:** This file contains dictionaries required for model inputs.
+
+- **`support_dicts.pkl`:** Here, you can find support dictionaries used in the application.
+
+- **`rank_dataframe.pkl`:** This file stores data needed for rank calculations.
+
+- **`win_per_dataframe.pkl`:** This file contains win percentage data used in the application.
+
+- **`streamlit_app.py`:** The Streamlit web application code.
+
+- **`requirements.txt`:** Lists the necessary Python packages and dependencies required to run the application.
+
+All these files are present directly in the main branch of this repository.
 
 ## Usage
 
