@@ -235,6 +235,21 @@ def main():
     # Set a title for your app
     st.title(":cricket_bat_and_ball: CV ODI WC Predictor")
     st.markdown("##")
+    ##########
+    # Your model details
+    model_details = """
+    ## Model Details
+    
+    - **Model Type**: Decision Tree
+    - **Accuracy**: 85%
+    - **Training Data Size**: 1000 samples
+    - **Test Data Size**: 200 samples
+    """
+    
+    # Add to sidebar
+    st.sidebar.markdown(model_details)
+
+    ##################
 
         
     # Create input widgets for user input
