@@ -240,7 +240,7 @@ def main():
     model_details = """
     ## Note: Model Combination and Data Sources
     
-    The predicted winner shown is a combination of three models, each trained on different datasets:
+    The predicted winner shown is a combination of three models, each trained on different datasets, and all three models were built using the hyperparameter-tuned XGBClassifier algorithm from scikit-learn:
     - **Model 1 (Matches from 2018 to September 17, 2023):** This model was trained on international ODI match data spanning from 2018 to September 17, 2023. This dataset was obtained through web scraping from ESPNcricinfo.com.
     - **Model 2 (Matches from January 2022 to September 2023):** Model 2 was trained on data obtained from the ICC website. This dataset includes match details, pitch ratings, and outfield ratings for matches played from January 2022 to September 2023.
     - **Model 3 (Matches Played in Indian Grounds):** Model 3 was trained on data specific to ODI matches played in Indian grounds. This dataset was curated to focus on matches conducted in venues relevant to the World Cup.
