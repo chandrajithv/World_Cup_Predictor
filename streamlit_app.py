@@ -255,9 +255,8 @@ def main():
     Model 3: 30%. 
     This multi-model approach and the inclusion of diverse datasets aim to provide comprehensive and accurate predictions for upcoming ODI matches, considering various factors that may influence match outcomes.
 
-    **Disclaimer: Toss Details Not Considered**
-    Please be aware that the predictions do not factor in toss details, which can influence match outcomes in cricket. This omission may result in a slight bias, especially when both teams have similar winning probabilities. Users should consider toss results and other dynamic factors when using these predictions.
-    """
+    **Disclaimer:**
+    Please be aware that the predictions do not factor in toss details, which can influence match outcomes in cricket. Additionally,  predictions are based on data available up to September 17, 2023. This omission may result in a slight bias, especially when both teams have similar winning probabilities. Users should consider toss results and other dynamic factors when using these predictions.    """
     
     # Add to sidebar
     st.sidebar.markdown(model_details)
