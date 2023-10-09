@@ -238,12 +238,25 @@ def main():
     ##########
     # Your model details
     model_details = """
-    ## Model Details
+    ## Note: Model Combination and Data Sources
     
-    - **Model Type**: Decision Tree
-    - **Accuracy**: 85%
-    - **Training Data Size**: 1000 samples
-    - **Test Data Size**: 200 samples
+    The predicted winner shown is a combination of three models, each trained on different datasets:
+    - **Model 1 (Matches from 2018 to September 17, 2023):** This model was trained on international ODI match data spanning from 2018 to September 17, 2023. This dataset was obtained through web scraping from ESPNcricinfo.com.
+    - **Model 2 (Matches from January 2022 to September 2023):** Model 2 was trained on data obtained from the ICC website. This dataset includes match details, pitch ratings, and outfield ratings for matches played from January 2022 to September 2023.
+    - **Model 3 (Matches Played in Indian Grounds):** Model 3 was trained on data specific to ODI matches played in Indian grounds. This dataset was curated to focus on matches conducted in venues relevant to the World Cup.
+
+    In addition to these primary data sources, several enhancements were made to enrich the datasets:
+    - **Win Percentage Data (2020 to 2023):** Win percentage data for various teams in the years 2020 to 2023 was added to the datasets. This information provides insights into each team's performance leading up to the predictions.
+    - **ODI Rankings (2018 to 2023):** ODI rankings for various teams spanning from 2018 to 2023 were integrated into the data. These rankings offer an additional dimension of team strength and standing.
+
+    The final prediction is a combination of predictions by these three models, with the following weightage:
+    Model 1: 40%
+    Model 2: 30%
+    Model 3: 30%
+    This multi-model approach and the inclusion of diverse datasets aim to provide comprehensive and accurate predictions for upcoming ODI matches, considering various factors that may influence match outcomes.
+
+    **Disclaimer: Toss Details Not Considered**
+    Please be aware that our predictions do not factor in toss details, which can influence match outcomes in cricket. This omission may result in a slight bias, especially when both teams have similar winning probabilities. Users should consider toss results and other dynamic factors when using these predictions.
     """
     
     # Add to sidebar
